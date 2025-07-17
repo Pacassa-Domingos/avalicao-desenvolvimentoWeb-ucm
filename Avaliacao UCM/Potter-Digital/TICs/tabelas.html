@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas de Alunos</title>
+
+  <style>
+    * {
+    box-sizing: border-box;
+}
+body {
+    font-family: bookman old style;
+    margin: 0;
+    background: #f7f1f1;
+}
+    table, th, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px 10px;
+    }
+    th{ 
+      background-color: rgb(21, 4, 98);
+      color: white;
+    }
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /*odd é aplicado a todos os elementos impares*/
+    table tr:nth-child(odd){
+      background-color: #ddd;
+    }
+    /* o even é aplicado a todos elementos pares*/
+    table tr:nth-child(even){
+      background-color: white;      
+    }
+    header{
+      text-align: center;
+      background: rgb(182, 3, 107);
+      padding: 30px;
+    }
+    header h1{
+      font-size: 50px;
+      font-family: bookman old style;
+      color: white;
+    }
+    footer{
+      padding: 5px 10px;
+      background-color: aqua;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+    }
+    a {
+      text-decoration: none;
+    }
+        
+    .btn-abrir{
+      color: rgb(73, 10, 221);
+      font-size: 30px; 
+      
+    }
+    nav{
+      height: 100%;
+      width: 0px;
+      background-color: rgb(21, 4, 98);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      overflow: hidden;
+      transition: width 0.3s;
+        }
+    nav a{
+      color: white;
+      font-size: 30px;
+      display: block;
+      padding: 12px 10px 12px 32px;
+    }
+    nav a:hover{
+      color: rgb(21, 4, 98);
+      background-color: white;
+    }
+    main{
+      padding: 15px;
+      transition: margin-left 0.5s;
+    }
+    #link-topo {
+    text-decoration: none;
+    size: 20px;
+    color: rgb(0, 255, 34);
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px #333;
+    border-radius: 20px;
+}
+.btn-whatsapp {
+    text-decoration: none;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Estudo Sobre Tabelas no HTML e CSS</h1>
+  </header>
+  <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
+  <nav id="menu">
+    <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+    <a href="../index.html">Página Inicial</a>
+    <a href="../sobrenos.html">Sobre Nós</a>
+    <a href="../Serviços.html">Serviços</a>
+    <a href="../produtos.html">Produtos</a>
+    <a href="../Contacto.html">Contacto</a>
+
+</nav>
+<main id="conteudo">
+  <h1>Tabelas</h1>
+  <h3>Tabela de Alunos</h3>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Nascimento</th>
+      <th>Contacto</th>
+    </tr>
+    <tr>
+      <th>01</th>
+      <td>João Ferreira</td>
+      <td>12-05-1999</td>
+      <td>842614255</td>
+    </tr>
+    <tr>
+      <th>02</th>
+      <td>Lourenço Ferreira</td>
+      <td>14-02-1997</td>
+      <td>862258255</td>
+    </tr>
+    <tr>
+      <th>03</th>
+      <td>Silvania António</td>
+      <td>02-08-1995</td>
+      <td>862644255</td>
+    </tr>
+    <tr>
+      <th>04</th>
+      <td>João Independente</td>
+      <td>25-06-1919</td>
+      <td>842578333</td>
+    </tr>
+</table>
+<h3>Tabela de Alunos com colspan </h3>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Nascimento</th>
+    <th colspan="2">Contacto</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>João Ferreira</td>
+    <td>12-05-1999</td>
+    <td>842614255</td>
+    <td>822614255</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Lourenço Ferreira</td>
+    <td>14-02-1997</td>
+    <td>862258255</td>
+    <td>842258255</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>Silvania António</td>
+    <td>02-08-1995</td>
+    <td>862644255</td>
+    <td>823355999</td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td>João Independente</td>
+    <td>25-06-1919</td>
+    <td>842578333</td>
+    <td>862325999</td>
+  </tr>
+</table>
+</table>
+<h3>Tabela de Alunos com colspan </h3>
+<table>
+  <tr>
+    <th>Sexo</th>
+    <th>Nome</th>
+    <th>Nascimento</th>
+    <th colspan="2">Contacto</th>
+  </tr>
+  <tr>
+    <td rowspan="2">M</td>
+    <td>João Ferreira</td>
+    <td>12-05-1999</td>
+    <td>842614255</td>
+    <td>822614255</td>
+  </tr>
+  <tr>
+    <td>Lourenço Ferreira</td>
+    <td>14-02-1997</td>
+    <td>862258255</td>
+    <td>842258255</td>
+  </tr>
+  <tr>
+    <td rowspan="3">F</td>
+    <td>Silvania António</td>
+    <td>02-08-1995</td>
+    <td>862644255</td>
+    <td>823355999</td>
+  </tr>
+  <tr>
+    <td>Joaninha Independente</td>
+    <td>25-06-2004</td>
+    <td>842578363</td>
+    <td>862324449</td>
+  </tr>
+  <tr>
+    <td>Felicia de Sousa</td>
+    <td>11-08-1998</td>
+    <td>863377733</td>
+    <td>825331444</td>
+  </tr>
+</table>
+
+</main>
+  
+<script>
+  function abrirMenu() {
+      document.getElementById('menu').style.width = '250px';
+      document.getElementById('conteudo').style.marginLeft = '250px';
+  }
+  function fecharMenu() {
+      document.getElementById('menu').style.width = '0px';
+      document.getElementById('conteudo').style.marginLeft = '0px';
+  }
+</script>
+<a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=258842610206" target="_blank">
+  <img src="../imagens/whatsapp-png-image-9.png" alt="Whatsap" width="70px" height="70px" title="Quero falar com atendimento"> 
+</a>
+<a id="link-topo" href="#">&#9650;<strong>Topo</strong></a>
+</div>
+</body>
+<footer>
+  <h4>Contacto</h4>
+  <p>Cell: +258 842610206 ou 861729724</p>
+  <p>E-mail: domingospacassa@hotmail.com ou domingospacassa@gmail.com</p>
+</footer>
+</html>

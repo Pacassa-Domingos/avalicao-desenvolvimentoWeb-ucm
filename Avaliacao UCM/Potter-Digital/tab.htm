@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabs</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tab{
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+            overflow: auto;
+        }
+        .tab button{
+            background-color: #f1f1f1;
+            border: none;
+            outline: none;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            padding: 10px 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 3px 2px 0 2px;
+            float: left;
+        }
+        .tab button:hover{
+            background-color: #fbfbfb;
+        }
+        .tab button.ativo{
+            background-color: white;
+            color: #008cff;
+        }
+        .conteudo{
+            border: 1px solid #ccc;
+            border-top: none;
+            padding: 6px 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <button class="ativo" onclick="abrirTab('html')">HTML</button>
+        <button onclick="abrirTab('css')">CSS</button>
+        <button onclick="abrirTab('javascript')">JavaScript</button>
+    </div>
+    <div id="html" class="conteudo">
+        <h3>HTML</h3>
+        <p>HTML é uma linguagem padrão usado no mundo inteiro, para desenvolver paginas Web. A sigla HTML significa
+            Hypertext Markup Language, que traduzido para Português significa "linguagem de marcação de hipertexto."
+        </p>
+    </div>
+    <div id="css" class="conteudo">
+        <h3>CSS</h3>
+        <p>A sigla <Strong>CSS</Strong> significa "Cascading Style Sheets", traduzido em Português significa "folha de estilo em cascata.
+        é uma linguagem que complementa a linguagem HTML</p>
+    </div>
+    <div id="javascript" class="conteudo">
+        <h3>JavaScript</h3>
+        <p>JavaScript é uma linguagem de programação do HTML, com ela voçe programar o comportamento da pagina web.</p>
+    </div>
+    <script>
+        function abrirTab(idTab){
+            var conteudos = document.getElementsByClassName('conteudo');
+
+            for (var i = 0; i< conteudos.length; i++){
+                console.log(i);
+            }
+
+            document.getElementById(idTab).style.display = 'block';
+        }
+            
+    </script>
+</body>
+</html>

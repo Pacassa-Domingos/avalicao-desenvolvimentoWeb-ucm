@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <title>Potter Digital</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/contacto.css" type="text/css">
+
+    <script src="./javascrip/script.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Início</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><a href="Serviços.html">Serviços</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <form action= "https://api.staticforms.xyz/submit" method="post" class="card">
+            <input type="hidden" name="accessKey" value="72960932-a34c-4868-88e8-62592c3e2572">
+            <input type="hidden" name="redirectTo" value="#">
+            <label for="inputNome">Primeiro Nome:</label>
+            <input type="text" id="inputNome" name= "name" required maxlength="25" minlength="3">
+            <span></span>
+            
+            <div>
+                <label for="inputEmail">Endereço de E-mail:</label>
+                <input type="Email" id="inputEmail" name= "email" required maxlength="50">
+                <span></span>
+            </div>
+
+            <div>
+                <label for="textAreaMensagem">Mensagem</label>
+                <textarea name="message" id="textAreaMensagem" required maxlength="150"></textarea>
+                <span></span>
+            </div>
+
+            <button>Enviar Mensagem</button>
+        </form>
+
+    </div>
+    <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=258842610206" target="_blank">
+        <img src="imagens/whatsapp-png-image-9.png" alt="Whatsap" width="70px" height="70px" title="Quero falar com atendimento"> 
+    </a>
+   
+    <footer>
+        <dl>
+            <dt>E-mail:</dt>
+            <dd>domingospacassa@gmail.com ou domingospacassa@hotmail.com</dd>
+            <br/>
+            <dt>Telefones:</dt>
+            <dd>(+258) 842610206 ou (+258) 861729724</dd>
+            <br/>
+            <dt>Endereço:</dt>
+            <dd>Dondo, Bairro Mafarinha</dd>
+            <dd>&copy; 2023 Potter Digital. Todos os direitos reservados.</dd>
+        </dl>
+        <p>Potter Digital</p>
+    </footer>
+
+</body>
+</html>

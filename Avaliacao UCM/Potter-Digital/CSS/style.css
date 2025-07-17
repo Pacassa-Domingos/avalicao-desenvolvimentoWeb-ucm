@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: bookman old style;
+    margin: 0;
+    background:#fff;
+}
+.btn-whatsapp {
+    text-decoration: none;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+header {
+    text-align: center;
+    background: rgb(182, 3, 107);
+    padding: 30px;
+}
+header h1 {
+    font-size: 50px;
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    background-color: rgb(21, 4, 98);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+}
+nav li {
+    float: left;
+}
+nav a:hover {
+    background-color: white;
+    color: rgb(21, 4, 98);
+}
+.row{
+    padding: 0 20px;
+    display: table;
+    width: 100%;
+}
+.row h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #ee0a56;
+}
+section{
+    background-color: rgb(157, 194, 241);
+    float: left;
+    width: 75%;
+    border-radius: 20px;
+}
+aside{
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.card h2{
+    font-size: 35px;
+    text-align: center;
+    color: rgba(21, 04, 76);
+}
+.card a {
+    text-decoration: none;
+}
+footer{
+    padding: 20px;
+    background: rgb(21, 4, 98);
+    color: white;
+    margin-top: 20px;
+    display: table;
+    width: 100%;
+}
+footer dl, footer p{
+    display:table-cell;
+    vertical-align: middle;
+}
+footer p{
+    padding-right: 70px;
+}
+footer dt {
+    font-weight: bold;
+
+}
+footer dd{
+    margin-left: 0px;
+}
+footer p{
+    text-align: right;
+    font-weight: bold;
+    font-size: 30px;
+}
+h3, h5 {color: red }
+Ol li {
+    text-align: justify;
+    font-size: 20px;
+    padding: 2px;
+}
+#sobrenos h1 {
+    font: Wide Latin;
+    color: rgb(105, 5, 67); 
+    text-align: center;
+    font-size: 40px;
+}
+#sobrenos p {
+    font: bookman old style;
+    text-align: justify;
+    font-size: 20px;
+}
+
+img {
+    border-radius: 20px;
+  }
+#postagem {
+    text-align: justify;
+    color: #333;
+}
+#postagem p{
+    font-size: 18px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#lista-topicos {
+    list-style-type: none;
+    padding: 0;
+}
+#lista-topicos a {
+    text-decoration: none;
+    color: black;
+}
+#lista-topicos li {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+}
+
+  /*table*/
+@media screen and (max-width: 768px) {
+    section, aside {
+        width: 100%;
+        padding: 0;
+      }
+}
+/*celular*/
+@media screen and (max-width: 600px) {
+    nav li  {
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+    footer p {
+        display: none;
+      }
+    
+}
+#link-topo {
+    text-decoration: none;
+    size: 20px;
+    color: rgb(0, 255, 34);
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px #333;
+    border-radius: 20px;
+}
